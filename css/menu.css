@@ -1,0 +1,132 @@
+.menu {
+  padding: 40px 0 0 0;
+  background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+    url(../image/room.jpg) no-repeat;
+  background-size: cover;
+}
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__item {
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu__item-tel {
+  font-size: 23.85px;
+  line-height: 28px;
+}
+
+.menu__item-call {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.tel-vector {
+  display: none;
+}
+
+.menu__content {
+  padding: 0 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.menu__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.btn-link {
+  max-width: 200px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 48px;
+  margin-bottom: 120px;
+  background: #15a9cb;
+  box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+  border-radius: 50px;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .menu__container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu {
+    padding: 15px 0 0 0;
+  }
+
+  .menu__container {
+    margin-bottom: 65px;
+  }
+
+  .menu__img,
+  .footer__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu__nav {
+    display: none;
+  }
+
+  .tel-vector {
+    background: url(../image/Phone.svg) no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu__content {
+    padding: 15px 0;
+  }
+
+  .menu__title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .menu__paragraph {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 54px;
+  }
+
+  .btn-link {
+    margin-bottom: 65px;
+  }
+}
