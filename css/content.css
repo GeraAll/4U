@@ -89,11 +89,27 @@
 }
 
 @media (max-width: 320px) {
+  .content {
+    padding: 30px 0;
+  }
+
   .menu__container,
   .content__container,
   .content__advantages,
   .contact__form {
     padding: 0 15px;
+  }
+
+  .content__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .content__paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
   }
 
   .content__list {

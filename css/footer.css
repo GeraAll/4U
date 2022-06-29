@@ -42,7 +42,7 @@
   text-decoration: underline;
 }
 
-.footer__done {
+.footer-done {
   display: none;
 }
 
@@ -81,7 +81,7 @@
     display: none;
   }
 
-  .footer__done {
+  .footer-done {
     display: block;
     font-weight: 500;
     font-size: 12px;
