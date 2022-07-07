@@ -1,6 +1,6 @@
 .contact {
   background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
-    url(../image/arm.jpg) no-repeat;
+    url(../image/arm.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -10,10 +10,10 @@
   line-height: 41px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
-.contact__title-quest {
+.contact__quest {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
@@ -24,17 +24,18 @@
 .contact__form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 53px;
+}
+
+.contact__list {
   margin-bottom: 50px;
 }
 
 .contact__item {
   margin-bottom: 21px;
   text-align: center;
-}
-
-.contact__item:nth-child(3) {
-  margin-bottom: 50px;
 }
 
 .contact__item:last-child {
@@ -44,7 +45,7 @@
 .contact__input {
   width: 423px;
   height: 44px;
-  border: 1.38235px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50px;
   font-weight: 400;
   font-size: 22px;
@@ -57,7 +58,7 @@
 
 .btn-link-size {
   max-width: 218px;
-  padding: 11px 38px;
+  padding: 12px 38px;
   margin: 0;
 }
 
@@ -69,8 +70,55 @@
 }
 
 .contact__link {
-  text-decoration: underline;
+  border-bottom: 1px solid;
   color: #4a76a8;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    padding-bottom: 58px;
+  }
+  .contact__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .contact__quest {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  .contact__form {
+    margin-bottom: 31px;
+  }
+
+  .contact__list {
+    margin-bottom: 47px;
+  }
+
+  .contact__item {
+    margin-bottom: 15px;
+  }
+
+  .contact__input {
+    width: 377px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 8px 23px;
+  }
+
+  .contact__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -82,37 +130,44 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+    margin-bottom: 13px;
   }
 
-  .contact__title-quest {
-    font-weight: 500;
+  .contact__quest {
     font-size: 12px;
     line-height: 14px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+  }
+
+  .contact__form {
+    margin-bottom: 29px;
+  }
+
+  .contact__list {
+    margin-bottom: 42px;
   }
 
   .contact__item {
     margin-bottom: 15px;
   }
 
-  .contact__item:nth-child(3) {
-    margin-bottom: 45px;
-  }
-
   .contact__input {
     width: 290px;
     height: 28px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    padding: 6px 18px;
+    border: 1px solid;
   }
 
-  .contact__form {
-    margin-bottom: 30px;
+  .btn-link-size {
+    width: 174px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 26px;
   }
 
   .contact__text {
-    font-weight: 400;
     font-size: 11px;
     line-height: 13px;
   }

@@ -4,42 +4,43 @@
     url(../image/room.jpg) no-repeat;
   background-size: cover;
 }
+
 .menu__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 120px;
 }
 
-.menu__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.logo__img {
+  width: 68px;
+  height: 68px;
 }
 
-.menu__item {
-  font-style: normal;
+.call__img {
+  display: none;
+}
+
+.call {
   font-weight: 400;
   text-align: center;
 }
 
-.menu__item-tel {
+.call__phone {
+  display: block;
   font-size: 23.85px;
   line-height: 28px;
 }
 
-.menu__item-call {
+.call__text {
   font-size: 16px;
   line-height: 19px;
-  text-decoration: underline;
-}
-
-.tel-vector {
-  display: none;
+  border-bottom: 1px solid;
 }
 
 .menu__content {
-  padding: 0 105px;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 115px 0 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +52,7 @@
   font-size: 52px;
   line-height: 61px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .menu__paragraph {
@@ -63,6 +64,10 @@
   margin-bottom: 90px;
 }
 
+.menu__paragraph-tel {
+  display: none;
+}
+
 .btn-link {
   max-width: 200px;
   font-style: normal;
@@ -72,7 +77,6 @@
   text-align: center;
   color: #ffffff;
   padding: 12px 48px;
-  margin-bottom: 120px;
   background: #15a9cb;
   box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
   border-radius: 50px;
@@ -80,53 +84,95 @@
 }
 
 @media (max-width: 1024px) {
-  .menu__container {
-    padding: 0 30px;
+  .menu {
+    padding-top: 26px;
+  }
+
+  .logo__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .call__phone {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .call__text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .menu__content {
+    width: 780px;
+    padding: 65px 0 70px 0;
+  }
+
+  .menu__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 29px;
+  }
+
+  .menu__paragraph {
+    width: 754px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 56px;
   }
 }
 
 @media (max-width: 320px) {
   .menu {
-    padding: 15px 0 0 0;
+    padding-top: 15px;
   }
 
   .menu__container {
-    margin-bottom: 65px;
+    padding: 0 15px;
   }
 
-  .menu__img,
-  .footer__img {
+  .logo__img {
     width: 30px;
     height: 30px;
   }
 
-  .menu__nav {
+  .call__phone,
+  .call__text {
     display: none;
   }
 
-  .tel-vector {
-    background: url(../image/Phone.svg) no-repeat;
-    display: block;
-    width: 25px;
-    height: 25px;
-  }
-
   .menu__content {
-    padding: 15px 0;
+    width: 290px;
+    padding: 61px 0 66px 0;
+    text-align: center;
   }
 
   .menu__title {
+    font-weight: 900;
     font-size: 20px;
     line-height: 23px;
+    margin-bottom: 26px;
   }
 
   .menu__paragraph {
+    display: none;
+  }
+
+  .menu__paragraph-tel {
+    display: block;
+    width: 290px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .btn-link {
-    margin-bottom: 65px;
+    width: 160px;
+    padding: 9px 29px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
   }
 }
