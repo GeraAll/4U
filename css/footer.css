@@ -12,6 +12,7 @@
   font-size: 12px;
   line-height: 17px;
   text-align: center;
+  margin-top: -6px;
 }
 
 .footer__logo {
@@ -29,6 +30,19 @@
 @media (max-width: 1024px) {
   .footer {
     padding-top: 37px;
+  }
+
+  .footer__container {
+    margin-top: -2px;
+  }
+
+  .footer__phone {
+    padding-bottom: 3px;
+    padding-right: 3px;
+  }
+
+  .footer__done {
+    padding-right: 22px;
   }
 }
 
@@ -57,7 +71,7 @@
   .footer__done {
     width: 100%;
     order: 1;
-    padding: 10px 0;
+    padding: 12px 0;
     background: #2a2c3f;
   }
 

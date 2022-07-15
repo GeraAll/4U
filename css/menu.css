@@ -93,6 +93,10 @@
     height: 60px;
   }
 
+  .call__block {
+    padding-right: 3px;
+  }
+
   .call__phone {
     font-size: 21px;
     line-height: 25px;
