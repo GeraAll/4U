@@ -33,7 +33,12 @@
 .call__phone {
   display: block;
   font-size: 23.85px;
-  line-height: 28px;
+  line-height: 26px;
+}
+
+.call__phone-margin {
+  margin-bottom: 6px;
+  line-height: 33px;
 }
 
 .call__text {
@@ -91,6 +96,7 @@
 @media (max-width: 1024px) {
   .menu {
     padding-top: 26px;
+    background-size: 100% 100%;
   }
 
   .logo__img {
@@ -104,7 +110,11 @@
 
   .call__phone {
     font-size: 21px;
-    line-height: 25px;
+    line-height: 18px;
+  }
+
+  .call__phone-margin {
+    margin-bottom: 7px;
   }
 
   .call__text {
@@ -134,6 +144,8 @@
 @media (max-width: 320px) {
   .menu {
     padding-top: 15px;
+    background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+      url(../image/room320.jpg) no-repeat;
   }
 
   .menu__container {

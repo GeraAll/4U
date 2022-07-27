@@ -24,17 +24,19 @@
               alt="логотип компании"
             />
           </a>
-          <a class="call" href="tel:+79625561234">
+          <div class="call">
             <img
               class="call__img"
               src="./image/Phone.svg"
               alt="телефон компании"
             />
             <div class="call__block">
-              <a class="call__phone" href="#">+7 (962) 556 - 1234</a>
+              <a class="call__phone" href="tel:+79625561234"
+                >+7 (962) 556 - 1234</a
+              >
               <a class="call__text" href="#call">Перезвоните мне</a>
             </div>
-          </a>
+          </div>
         </div>
         <div class="menu__content">
           <h1 class="menu__title">
@@ -97,7 +99,7 @@
           <p class="contact__quest">
             Оставьте номер телефона, и мы перезвоним вам
           </p>
-          <form class="contact__form">
+          <form class="contact__form" action="#" method="post">
             <ul class="contact__list">
               <li class="contact__item">
                 <input
@@ -124,7 +126,7 @@
                 />
               </li>
             </ul>
-            <button class="btn-link btn-link-size" type="button">
+            <button class="btn-link btn-link-size" type="submit">
               позвоните мне
             </button>
           </form>
@@ -155,17 +157,21 @@
             <span>Сделано Ивановым Иваном</span>
           </div>
           <div class="footer__phone">
-            <a class="call" href="tel:+79625561234">
+            <div class="call">
               <img
                 class="call__img"
                 src="./image/Phone.svg"
                 alt="телефон компании"
               />
               <div class="call__block">
-                <a class="call__phone" href="#">+7 (962) 556 - 1234</a>
+                <a
+                  class="call__phone call__phone-margin"
+                  href="tel:+79625561234"
+                  >+7 (962) 556 - 1234</a
+                >
                 <a class="call__text" href="#call">Перезвоните мне</a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
